@@ -20,6 +20,8 @@ I'm using docker compose to build the structure
 
 3. Also we have added a new volume so that the volume will be used by the container but get stored on the host machine. 
 
+4. Need to create a separate directory and perform the task on it. 
+
 
 Let's see the docker compose file
 ```sh
