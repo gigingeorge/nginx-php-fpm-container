@@ -92,7 +92,15 @@ server {
 
         root /var/www/html;
         index index.php;
-
+# POST requests and urls with a query string should always go to PHP
+if ($request_method = POST) {
+        set $cache_uri 'null cache';
+}
+ 
+if ($query_string != "") {
+        set $cache_uri 'null cache';
+}   
+ 
 
    location / {
     # First attempt to serve request as file, then
