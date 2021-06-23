@@ -1,4 +1,4 @@
-# Nginx-PHPFPM containerization
+# Nginx-PHP-FPM containerization
 
 Here is a simple project discussing about configuring a PHP website on a docker container using Nginx and php-fpm. 
 Also I installed a self signed SSL certificate to it. 
